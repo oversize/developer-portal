@@ -15,7 +15,7 @@ jobs:
       - name: Install
         uses: ./.github/actions/yarn-build
         with:
-          cmd: install
+          cmd: install --frozen-lockfile
 
       - name: Build
         uses: ./.github/actions/yarn-build
